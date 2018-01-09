@@ -11,5 +11,10 @@ def my_collect(array)
     name.split(" ").first
     array << element
   end
+
+  array.each do | lang |
+    lang.upcase
+  end
+
   array
 end

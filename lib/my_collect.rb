@@ -7,8 +7,8 @@ def my_collect(array)
     i = i + 1
   end
 
-  array.each do | element |
-    element.split(" ").first
+  array.each do | name |
+    name.split(" ").first
     array << element
   end
   array

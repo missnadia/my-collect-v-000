@@ -6,11 +6,10 @@ def my_collect(array)
     yield(array[i])
     i = i + 1
   end
-  
+
   array.each do | element |
     element.split(" ").first
     array << element
   end
   array
 end
-

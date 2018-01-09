@@ -3,17 +3,8 @@ def my_collect(array)
   i = 0
 
   while i < array.length
-    yield(array[i])
-    i = i + 1
-  end
-
-  array.each do | name |
-    name.split(" ").first
-    array << element
-  end
-
-  array.each do | lang |
-    lang.upcase
+    array << yield(array[i])
+    i += 1
   end
 
   array
